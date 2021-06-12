@@ -11,7 +11,7 @@ export default class Powerline extends Component {
 		super(props);
 		this.state = {
 			img: '',
-			id: '0',
+			id: '0.png',
 			width: 0,
 			height: 0
 		};
@@ -35,7 +35,7 @@ export default class Powerline extends Component {
 	render() {
 		return (
 			<div>
-				<Image loader={powerlinesLoader} width={this.state.width} height={this.state.height} src={this.state.id} />
+				<Image alt="powerlines" loader={powerlinesLoader} width={this.state.width} height={this.state.height} src={this.state.id} />
 			</div>
 		)
 	}
