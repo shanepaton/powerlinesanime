@@ -32,10 +32,26 @@ export default class Powerline extends Component {
 			});
 	}
 
+	fetchNewImage = () => {
+		fetch('/api/image')
+			.then((response) => {
+				return response.json();
+			})
+			.then((data) => {
+				this.setState({
+					img: data.url,
+					width: data.width,
+					height: data.height,
+					id: data.url.replace('https://powerlines.racks.ninja/', '')
+				})
+			});
+	}
+
 	render() {
 		return (
 			<div>
 				<Image alt="powerlines" loader={powerlinesLoader} width={this.state.width} height={this.state.height} src={this.state.id} />
+				<input type="button" value="lm,ao" onClick={this.fetchNewImage} />
 			</div>
 		)
 	}
