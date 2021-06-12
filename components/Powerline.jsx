@@ -51,7 +51,7 @@ export default class Powerline extends Component {
 		return (
 			<div>
 				<Image alt="powerlines" loader={powerlinesLoader} width={this.state.width} height={this.state.height} src={this.state.id} />
-				<input type="button" value="lm,ao" onClick={this.fetchNewImage} />
+				<input type="button" value="Give me a new one!" onClick={this.fetchNewImage} />
 			</div>
 		)
 	}
