@@ -25,6 +25,16 @@ export default function Home() {
 						Powerlines API
 					</span>
 				</a>
+				<a
+					href="https://powerlinesinanime.tumblr.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+
+					<span >
+						Image Source
+					</span>
+				</a>
 			</footer>
 		</div>
 	)
